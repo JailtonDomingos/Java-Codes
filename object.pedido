@@ -1,0 +1,83 @@
+//import java.util.Scanner;
+import java.util.ArrayList;
+import javax.swing.JOptionPane;
+import classe.Pizza;
+
+public class Pedido(){
+	
+	private static pedido_pizza(Arraylist lista_pedido){
+		//Scanner teclado = new Scanner(system.in);
+		
+		private int qtds_pizza;		
+		
+		qtds_pizza = Integer.parseInt(JOptionPane.showInputDialog(null, " Digite a quantidade de pizzas que deseja incluir no pedido: "));
+		
+		for (int i = 1; i <= qtds_pizza; i++){
+			Pizza pizza = new Pizza();			
+			int tamanho_pizza;
+			
+			tamanho_pizza = Integer.parseInt(JOptionPane.showInputDialog(null, " Digite o tamanho desejado para a pizza: 1 - Pequena, 2 - Média, 3 - Grande"));
+			
+			switch(tamanho_pizza){
+				case 1:					
+					cria_pizza_pequena(lista_pedido);
+				break;
+				case 2:
+					cria_pizza_media(lista_pedido);
+				break;
+				case 3:
+					cria_pizza_grande(lista_pedido);
+				break;
+				
+			}			
+			
+			
+		}
+	}
+
+	private cria_pizza_pequena(ArrayList lista_pedido){
+		Pizza pizza_pequena = new Pizza();
+		
+		String sabor1, sabor2;
+		sabor1 = JOptionPane.showInputDialog(null, " Entre com o primeiro sabor: ");
+		sabor2 = JOptionPane.showInputDialog(null, " Entre com o segundo sabor: ");
+		
+		pizza_pequena.setSabor1(sabor1);
+		pizza_pequena.setSabor2(sabor2);
+		
+		lista_pedido.add(pizza_pequena);
+		
+	}	
+	private cria_pizza_media(ArrayList lista_pedido){
+		Pizza pizza_grande = new Pizza();
+		
+		String sabor1, sabor2, sabor3, sabor4;
+		sabor1 = JOptionPane.showInputDialog(null, " Entre com o primeiro sabor: ");
+		sabor2 = JOptionPane.showInputDialog(null, " Entre com o segundo sabor: ");
+		sabor3 = JOptionPane.showInputDialog(null, " Entre com o terceiro sabor: ");
+		
+		pizza_media.setSabor1(sabor1);
+		pizza_media.setSabor2(sabor2);
+		pizza_media.setSabor3(sabor3);
+		
+		lista_pedido.add(pizza_media);
+		
+	}	
+	private cria_pizza_grande(ArrayList lista_pedido){
+		Pizza pizza_grande = new Pizza();
+		
+		String sabor1, sabor2;
+		sabor1 = JOptionPane.showInputDialog(null, " Entre com o primeiro sabor: ");
+		sabor2 = JOptionPane.showInputDialog(null, " Entre com o segundo sabor: ");
+		sabor3 = JOptionPane.showInputDialog(null, " Entre com o terceiro sabor: ");
+		sabor4 = JOptionPane.showInputDialog(null, " Entre com o quarto sabor: ");
+		
+		pizza_grande.setSabor1(sabor1);
+		pizza_grande.setSabor2(sabor2);
+		pizza_grande.setSabor3(sabor3);
+		pizza_grande.setSabor4(sabor4);
+		
+		lista_pedido.add(pizza_grande);
+		
+	}	
+}

@@ -1,0 +1,38 @@
+private int SABORES = 5;
+
+private static Pizza_Media extends Pizza(){
+	String 	vet_sabores[SABORES];
+
+	public static Pizza_Media(String sabor_pizza_1, String sabor_pizza_2, String sabor_pizza_3, String sabor_pizza_4){
+		this.vet_sabores[1]	= sabor_pizza_1;
+		this.vet_sabores[2]	= sabor_pizza_2;
+		this.vet_sabores[3]	= sabor_pizza_3;
+		this.vet_sabores[4]	= sabor_pizza_4;
+	}
+
+	public getSabor1(){
+		return.vet_sabores[1];
+	}
+	public setSabor1(String sabor1){
+		this.vet_sabores[1] = sabor1;
+	}
+	public getsabor2(){
+		return vet_sabores[2];
+	}
+	public setSabor2(String sabor2){
+		this.vet_sabores[2] = sabor;
+	}
+	public getsabor3(){
+		return vet_sabores[3];
+	}
+	public setSabor3(String sabor2){
+		this.vet_sabores[3] = sabor;
+	}
+	public getsabor4(){
+		return vet_sabores[4];
+	}
+	public setSabor4(String sabor2){
+		this.vet_sabores[4] = sabor;
+	}
+
+}

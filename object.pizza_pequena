@@ -1,0 +1,24 @@
+private int SABORES = 2;
+
+private static Pizza_Pequena extends Pizza(){
+	String 	vet_sabores[SABORES];
+
+	public static Pizza_Pequena(String sabor_pizza_1, String sabor_pizza_2){
+		this.vet_sabores[1]	= sabor_pizza_1;
+		this.vet_sabores[2]	= sabor_pizza_2;
+	}
+	
+	public getSabor1(){
+		return.vet_sabores[1];
+	}
+	public setSabor1(String sabor1){
+		this.vet_sabores[1] = sabor1;
+	}
+	public getsabor2(){
+		return vet_sabores[2];
+	}
+	public setSabor2(String sabor2){
+		this.vet_sabores[2] = sabor;
+	}
+
+}

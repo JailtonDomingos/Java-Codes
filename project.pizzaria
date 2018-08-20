@@ -1,0 +1,32 @@
+/*
+Uma pizzaria que trabalha com tele entrega possui um menu com as pizas que são produzidas, contendo o nome da pizza, e o preço.
+Para criar um programa que possa ser utilizado pelo atendente da pizzaria vamos criar duas tabelas distintas, uma para as pizzas e outra que contém os preços das pizzas. Para representar essas tabelas será utilizado o tipo struct.
+
+Pizza: (Codigo Pizza, Nome)   
+Preço: (Codigo Pizza, Preço)
+
+> Iniciar criando as funções de cadastro para essas duas tabelas, utilizando o conceito de ponteiros.   
+> Criar uma função que busca o preço de uma pizza, recebendo o seu código.   
+> Criar uma função que busca o nome de uma pizza, recebendo o seu código.
+*/
+
+//-----------------------------------------------------------------------------------------------------------
+
+import java.util.Scanner;
+import java.util.ArrayList;
+import javax.swing.JOptionPane;
+import classe.Pizza;
+import classe.Pedido;
+
+public static void Main(String args[]){
+
+	ArrayList lista_pedido = new ArrayList();
+	//Scanner teclado = new Scanner(System.in);
+	
+	Pedido pedido = new Pedido();
+	Pedido.pedido_pizza(lista_pedido);
+	JOptionPane.showMessageDialog("Pedido finalizado!");
+	
+	
+	//return 0;
+}

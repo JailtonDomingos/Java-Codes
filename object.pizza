@@ -1,0 +1,30 @@
+private static Pizza(){
+	int 	tamanho_pizza, preco_pizza;
+	String 	nome_pizza, sabor_pizza;
+
+	public static pizza(int tamanho_pizza, int preco_pizza, String nome_pizza, String sabor_pizza){
+		this.nome_pizza 	= nome_pizza;
+		this.tamanho_pizza	= tamanho_pizza;
+		this.preco_pizza 	= preco_pizza;
+		this.sabor_pizza	= sabor_pizza;
+	}
+
+	public getNome(){
+		return nome_pizza;
+	}
+	public setNome(String nome){
+		this.nome_pizza = nome;
+	public getCodigo(){
+		return codigo_pizza;
+	}
+	public setTamanho(int tamanho_pizza){
+		this.tamanho_pizza = tamanho_pizza;
+	}
+	public getPreco(){
+		return preco_pizza;
+	}
+	public setPreco(){
+		this.preco_pizza = preco;
+	]	
+
+}
